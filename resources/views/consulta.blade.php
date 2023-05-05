@@ -58,8 +58,9 @@
                         <h4>Consultar - Contatos Agendados</h1>
                     </div>
                 </div>
-
-                <table class="table">
+                
+                <div class="table-responsive">
+                  <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">Nome</th>
@@ -67,6 +68,8 @@
                             <th scope="col">Origem</th>
                             <th scope="col">Contato</th>
                             <th scope="col">Observação</th>
+                            <th scope="col">Ações</th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -77,6 +80,7 @@
                                 <td>{{  $agendamento->origem  }} </td>
                                 <td>{{  $agendamento->data_contato  }} </td>
                                 <td>{{  $agendamento->observacao  }} </td>
+                                <td><a class="btn btn-primary m-1" href="#">Editar</a><a class="btn btn-danger m-1" href="#">Excluir</a></td>
                             </tr>
                             @endforeach
                         <tr>
